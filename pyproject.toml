@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "robotic-camera"
+version = "0.1.0"
+description = "A Monash Automation project to create a robotic camera that can automatically capture a subject."
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+asyncua = "^1.1.0"
+gphoto2 = "^2.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
