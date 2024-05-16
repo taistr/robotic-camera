@@ -9,7 +9,7 @@ NODE_ID: int = 12  # TODO: Find the correct node id
 async def main():
     # set up camera connection
     camera = gp.Camera()
-    camera.init(context=None)  # Autodetect and initialise first found camera
+    camera.init()  # Autodetect and initialise first found camera
 
     async with Client(url=OPCUA_LOCATION) as client:
         program_start_node = client.get_node(f"ns={NODE_ID};s=C1c_Start")
